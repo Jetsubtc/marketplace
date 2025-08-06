@@ -1,0 +1,71 @@
+{
+  "name": "solana-nft-marketplace",
+  "version": "1.0.0",
+  "description": "A sleek, modern NFT marketplace built for the Solana blockchain",
+  "homepage": "https://[YOUR_USERNAME].github.io/[REPOSITORY_NAME]",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@metaplex-foundation/js": "^0.20.1",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.34",
+    "@solana/wallet-adapter-wallets": "^0.19.23",
+    "@solana/web3.js": "^1.87.6",
+    "assert": "^2.1.0",
+    "buffer": "^6.0.3",
+    "clsx": "^2.0.0",
+    "crypto-browserify": "^3.12.0",
+    "framer-motion": "^10.16.4",
+    "https-browserify": "^1.0.0",
+    "lucide-react": "^0.292.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "tailwind-merge": "^2.0.0",
+    "typescript": "^4.9.5",
+    "url": "^0.11.4",
+    "util": "^0.12.5",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.68",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

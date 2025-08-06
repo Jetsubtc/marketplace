@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-solana-dark text-white font-inter;
+    background: linear-gradient(135deg, #0A0A0A 0%, #050505 100%);
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .glass-card {
+    @apply glass rounded-2xl p-6 shadow-2xl;
+  }
+  
+  .neon-border {
+    @apply border border-neon-purple/30 shadow-lg shadow-neon-purple/20;
+  }
+  
+  .neon-glow {
+    @apply shadow-lg shadow-neon-purple/50;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-neon-purple via-neon-teal to-neon-green bg-clip-text text-transparent;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-neon-purple to-neon-teal text-white font-semibold px-6 py-3 rounded-xl hover:shadow-lg hover:shadow-neon-purple/50 transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply glass border border-white/20 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition-all duration-300;
+  }
+  
+  .nft-card {
+    @apply glass-card hover:neon-glow transition-all duration-500 transform hover:scale-105 cursor-pointer;
+  }
+  
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+} 
