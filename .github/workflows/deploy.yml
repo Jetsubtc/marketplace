@@ -3,8 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build-and-deploy:
@@ -23,33 +21,13 @@ jobs:
     - name: Install dependencies
       run: npm ci
       
-    - name: Check Node version
-      run: node --version && npm --version
-      
-    - name: List files
-      run: ls -la
-      
-    - name: Check package.json
-      run: cat package.json
-      
     - name: Build
-      run: |
-        echo "Starting build process..."
-        npm run build
-        echo "Build completed successfully"
+      run: npm run build
       env:
         CI: false
       
-    - name: Check build output
-      run: |
-        echo "Checking build directory..."
-        ls -la build/
-        echo "Build directory contents:"
-        find build/ -type f | head -20
-        
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build 
