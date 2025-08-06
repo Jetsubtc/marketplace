@@ -29,7 +29,16 @@ module.exports = {
         new webpack.ProvidePlugin({
           Buffer: ['buffer', 'Buffer'],
           process: 'process/browser',
-        }),
+        })
+      );
+
+      // Remove conflicting DefinePlugin if it exists
+      webpackConfig.plugins = webpackConfig.plugins.filter(
+        plugin => !(plugin instanceof webpack.DefinePlugin && plugin.definitions['process.env'])
+      );
+
+      // Add our DefinePlugin
+      webpackConfig.plugins.push(
         new webpack.DefinePlugin({
           'process.env': JSON.stringify(process.env),
         })
