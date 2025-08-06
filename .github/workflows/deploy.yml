@@ -33,10 +33,20 @@ jobs:
       run: cat package.json
       
     - name: Build
-      run: npm run build
+      run: |
+        echo "Starting build process..."
+        npm run build
+        echo "Build completed successfully"
       env:
         CI: false
       
+    - name: Check build output
+      run: |
+        echo "Checking build directory..."
+        ls -la build/
+        echo "Build directory contents:"
+        find build/ -type f | head -20
+        
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
