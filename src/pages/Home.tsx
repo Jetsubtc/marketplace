@@ -52,15 +52,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Test Section */}
-      <div className="text-white text-center py-20">
-        <h1 className="text-4xl font-bold mb-4">🎉 Home Component is Working!</h1>
-        <p className="text-xl mb-8">If you can see this, the Home component is rendering correctly.</p>
-        <div className="bg-neon-purple/20 p-4 rounded-lg">
-          <p className="text-sm">The issue might be with the CSS or other components.</p>
-        </div>
-      </div>
-      
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
