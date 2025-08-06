@@ -1,8 +1,8 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (DISABLED)
 
 on:
-  push:
-    branches: [ main ]
+  # Disabled - using manual deployment instead
+  workflow_dispatch: # Manual trigger only
 
 jobs:
   build-and-deploy:
