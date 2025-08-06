@@ -12,12 +12,14 @@ function App() {
     <div className="min-h-screen bg-solana-dark">
       <Navbar />
       <main className="pt-20">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/explore" element={<Explore />} />
-          <Route path="/mint" element={<Mint />} />
-          <Route path="/profile" element={<Profile />} />
-        </Routes>
+        {/* Simple Test */}
+        <div style={{color: 'white', textAlign: 'center', padding: '80px 20px', backgroundColor: 'red'}}>
+          <h1 style={{fontSize: '48px', fontWeight: 'bold', marginBottom: '16px'}}>🚨 SIMPLE TEST</h1>
+          <p style={{fontSize: '24px', marginBottom: '32px'}}>If you can see this red box, the main content is working!</p>
+          <div style={{backgroundColor: 'white', color: 'black', padding: '16px', borderRadius: '8px'}}>
+            <p style={{fontSize: '14px'}}>This should be visible on the live site.</p>
+          </div>
+        </div>
       </main>
       <Toaster
         position="top-right"
