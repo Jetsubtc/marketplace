@@ -14,6 +14,7 @@ function App() {
           <div className="bg-neon-purple/20 p-4 rounded-lg">
             <p className="text-sm">✅ Site is working! Latest deployment successful.</p>
             <p className="text-sm mt-2">Build completed: {new Date().toLocaleString()}</p>
+            <p className="text-sm mt-2">🚀 GitHub Actions should deploy this automatically!</p>
           </div>
         </div>
       </main>
