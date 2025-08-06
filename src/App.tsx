@@ -1,10 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Explore from './pages/Explore';
-import Mint from './pages/Mint';
-import Profile from './pages/Profile';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
@@ -12,12 +7,12 @@ function App() {
     <div className="min-h-screen bg-solana-dark">
       <Navbar />
       <main className="pt-20">
-        {/* Simple Test */}
-        <div style={{color: 'white', textAlign: 'center', padding: '80px 20px', backgroundColor: 'red'}}>
-          <h1 style={{fontSize: '48px', fontWeight: 'bold', marginBottom: '16px'}}>🚨 SIMPLE TEST</h1>
-          <p style={{fontSize: '24px', marginBottom: '32px'}}>If you can see this red box, the main content is working!</p>
-          <div style={{backgroundColor: 'white', color: 'black', padding: '16px', borderRadius: '8px'}}>
-            <p style={{fontSize: '14px'}}>This should be visible on the live site.</p>
+        {/* Main Content */}
+        <div className="text-white text-center py-20">
+          <h1 className="text-4xl font-bold mb-4">🎉 Solana NFT Marketplace</h1>
+          <p className="text-xl mb-8">Welcome to the future of NFT trading!</p>
+          <div className="bg-neon-purple/20 p-4 rounded-lg">
+            <p className="text-sm">Your marketplace is now live and working!</p>
           </div>
         </div>
       </main>
