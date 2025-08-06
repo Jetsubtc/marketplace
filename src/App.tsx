@@ -12,7 +12,8 @@ function App() {
           <h1 className="text-4xl font-bold mb-4">🎉 Solana NFT Marketplace</h1>
           <p className="text-xl mb-8">Welcome to the future of NFT trading!</p>
           <div className="bg-neon-purple/20 p-4 rounded-lg">
-            <p className="text-sm">Your marketplace is now live and working!</p>
+            <p className="text-sm">✅ Site is working! Latest deployment successful.</p>
+            <p className="text-sm mt-2">Build completed: {new Date().toLocaleString()}</p>
           </div>
         </div>
       </main>
