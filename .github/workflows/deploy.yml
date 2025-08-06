@@ -26,6 +26,12 @@ jobs:
     - name: Check Node version
       run: node --version && npm --version
       
+    - name: List files
+      run: ls -la
+      
+    - name: Check package.json
+      run: cat package.json
+      
     - name: Build
       run: npm run build
       env:
